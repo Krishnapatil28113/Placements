@@ -74,7 +74,7 @@ void bubbleSort(vector<int> &arr, int n)
     }
 }
 
-// Recursive method
+// Recursive Version
 void bubbleSortRecursive(vector<int> &arr, int endIndex)
 {
 
