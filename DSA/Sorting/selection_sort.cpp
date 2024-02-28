@@ -19,6 +19,8 @@ Explanation:
     and compares it with all the remaining elements of the array.
     After each iteration, we get an element which is the minimum in the now available array(excluding the elements which are already sorted in previous iterations)
     After doing that for all the elements of the array, we get the sorted array.
+
+--> Time Complexity: O(n^2)
 */
 
 #include <bits/stdc++.h>
