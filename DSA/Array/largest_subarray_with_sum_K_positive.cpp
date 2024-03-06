@@ -2,6 +2,8 @@
 using namespace std;
 
 /*
+Question Link: https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_6682399
+
 # Brute Force Solution:
 
 Concept:
