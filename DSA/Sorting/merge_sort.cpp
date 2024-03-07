@@ -1,20 +1,22 @@
-// Question: https://www.codingninjas.com/studio/problems/merge-sort_5846
+/*
+Question: https://www.codingninjas.com/studio/problems/merge-sort_5846
 
-// Explanation:
-// This is a recursive method to sort the array using merge sort
-// The main process of merge sort is to divide the array into equal parts until the division yields a single element.
-// We are doing this because if we need to sort the array using merge sort, we need 2 sorted arrays to merge;
-// so as a single element can be considered as an array of 1 element and this array is sorted; we can merge 2 such
-// single elements to form a sorted array of size 2;
+Explanation:
+This is a recursive method to sort the array using merge sort
+The main process of merge sort is to divide the array into equal parts until the division yields a single element.
+We are doing this because if we need to sort the array using merge sort, we need 2 sorted arrays to merge;
+so as a single element can be considered as an array of 1 element and this array is sorted; we can merge 2 such
+single elements to form a sorted array of size 2;
 
-// and as we repeat this process again and again, combining 2 elements, combining 4 elements, combining 8 elements,
-// we will eventually sort the entire array.
+and as we repeat this process again and again, combining 2 elements, combining 4 elements, combining 8 elements,
+we will eventually sort the entire array.
 
-//-------------------------------------------------------------------------
-// Time Complexity: O(nlogn)
-// Space Complecity: O(2n + logn)
-// Extra Space required: n + logn (n -> Auxiliary array, logn -> Stack)
-//-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+Time Complexity: O(nlogn)
+Space Complecity: O(2n + logn)
+Extra Space required: n + logn (n -> Auxiliary array, logn -> Stack)
+-------------------------------------------------------------------------
+*/
 
 void merge(int arr[], int low, int mid, int high, int n)
 {

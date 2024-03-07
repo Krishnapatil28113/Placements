@@ -7,6 +7,7 @@ We have to return an array which consists of the union of 2 sorted arrays
 
 Method 1: (Use Set)
 * Set removes duplicate entries and stores elements in the sorted order as well(not unordered_set)
+* Perform the union and store the union in the set as it removes duplicate entries
 * Then we can transfer all the elements from the set to the array
 
 Method 2: (Use 2 pointer)
@@ -18,9 +19,11 @@ Method 2: (Use 2 pointer)
 * NOTE:
 --> If we are checking whether the element is present in the array or not, we might tend to end up in a runtime error
 --> as initially there wont be any element present in the array to compare;
---> So, we will have to add this condition, {c.size() == 0} || c.back() != b[j];  to perform the check initially
+--> So, we will have to add this condition, {c.size() == 0} || c.back() != b[j]; to perform the check initially
 
 */
+#include <bits/stdc++.h>
+using namespace std;
 
 vector<int> sortedArray(vector<int> a, vector<int> b)
 {
@@ -72,4 +75,9 @@ vector<int> sortedArray(vector<int> a, vector<int> b)
     }
 
     return c;
+}
+
+int main()
+{
+    return 0;
 }

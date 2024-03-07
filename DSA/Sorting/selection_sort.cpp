@@ -1,5 +1,4 @@
 /*
-
 Question: https://www.codingninjas.com/studio/problems/selection-sort_624469
 
 Problem Statement:
