@@ -30,8 +30,8 @@
 * Range: Max_element(arr) --> Sum(arr)
 * Apply BINARY SEARCH on this range!
 
-# Time Complexity:
-# Space Complexity:
+# Time Complexity: O(nlogn)
+# Space Complexity: O(1)
 */
 
 #include <bits/stdc++.h>
