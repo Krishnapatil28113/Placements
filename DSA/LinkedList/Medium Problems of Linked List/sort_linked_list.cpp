@@ -101,7 +101,8 @@ Node* sortList(Node *head){
     return head;
 }
 
-// Optimal Approach -> Traverse LL and generate 3 seperate LL's of 0,1 and 2 respectively and then link them
+// Optimal Approach -> Traverse LL and link them based on the data in the original linked list
+// *Note: This approach does not involve any creation of linked list; we are just assigning the links accordingly
 Node* sortList(Node *head){
     // Write your code here.
     Node* head0 = new Node(-1);
@@ -115,17 +116,17 @@ Node* sortList(Node *head){
     Node* temp = head;
     while(temp != nullptr) {
         if(temp->data == 0) {
-            temp0->next = new Node(0);
+            temp0->next =temp;
             temp0 = temp0->next;
             temp = temp->next;
         }
         else if(temp->data == 1) {
-            temp1->next = new Node(1);
+            temp1->next =temp;
             temp1 = temp1->next;
             temp = temp->next;
         }
         else {
-            temp2->next = new Node(2);
+            temp2->next =temp;
             temp2 = temp2->next;
             temp = temp->next;
         }
