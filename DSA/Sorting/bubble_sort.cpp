@@ -32,7 +32,7 @@ Explanation:
 --------------------------------------------------------------------
 
 4.How to think(recursion)
---> Firstly we should think about the main logic that is being performed for one of the elements(Comparing and swapping)
+--> Firstly we should think about the main logic that is being performed for one pair of the elements(Comparing and swapping)
 --> Perform that logic for one element(for loop in recursive function)
 --> Now, this logic is to performed again for the remaining elements(1 less than the previous)
 --> Call this function again with the array size to be 1 less than the previous array size
