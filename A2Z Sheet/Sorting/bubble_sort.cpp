@@ -9,7 +9,7 @@ Explanation:
 --> If the element to the left is greater than the element to the right(in case of sorting in ascending order),
     swap them and continue the same iteration for the rest of the elements
 --> At the end of each iteration, 1 element gets sorted(the largest element in the then considered array)
---> The array size to be considerd for sorting then becomes 1 element less than the array size in the previous iteration
+--> The array size to be considered for sorting then becomes 1 element less than the array size in the previous iteration
 
 --------------------------------------------------------------------
 2.Time Complexity:
@@ -32,9 +32,9 @@ Explanation:
 --------------------------------------------------------------------
 
 4.How to think(recursion)
---> Firstly we should think about the main logic that is being performed for one of the elements(Comparing and swapping)
+--> Firstly we should think about the main logic that is being performed for one pair of the elements(Comparing and swapping)
 --> Perform that logic for one element(for loop in recursive function)
---> Now, this logic is to performed again for the remaining elements(1 less than the previous)
+--> Now, this logic is to be performed again for the remaining elements(1 less than the previous)
 --> Call this function again with the array size to be 1 less than the previous array size
 --> Now, think of a base case to stop the recursive calling of the function(if the size of array is 1 -> return)
 */
