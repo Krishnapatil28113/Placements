@@ -22,26 +22,36 @@
     --> as there is no point in carrying that value of sum forward because it will be reducing the further sum
 * At the end of the iteration, maxSum will contain the maximum sum of the subarray
 ---------------------------------------------------------------
+
+# Time Complexity: O(N)
+# Space Complexity: O(1)
+
+# Note: Follow-Up Question below --> V.V.Imp
 */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    int maxSubArray(vector<int>& nums) {
+    int maxSubArray(vector<int> &nums)
+    {
         int n = nums.size();
 
         int sum = 0;
         int maxSum = INT_MIN;
-        for(int i=0;i<n;i++) {
+        for (int i = 0; i < n; i++)
+        {
             sum += nums[i];
 
-            if(sum > maxSum) {
+            if (sum > maxSum)
+            {
                 maxSum = sum;
             }
 
-            if(sum < 0) {
+            if (sum < 0)
+            {
                 sum = 0;
             }
         }
@@ -49,3 +59,47 @@ public:
         return maxSum;
     }
 };
+
+// Kadane's Algorithm
+
+/* Follow-Up question (V.V.V.V.Imp)********
+ * Printing the subarray with the largest sum
+ * If we want to print the subarray, we will need the start and endpoint of the subarray
+ * Now, we don't know, which exactly is the subarray that will be giving the largest sum
+ * So, what we do is, whenever the sum is 0, it means that we are starting to compute the sum of a subarray which might lead to the subarray with largest sum
+ * So, we store the starting index in 'start' variable
+ * Now, we will take in consideration the subarray only and only if it is increasing the maximum Sum
+ * Therefore, if the maximum Sum is increasing, we will assign the 'arrStart' variable to 'start', i.e, the starting point of the subarray and 'arrEnd' to 'i', where the subarray might end
+ * Hence, we will get the desired subarray with the maximum sum in between 'arrStart' and 'arrEnd'
+ */
+int lengthOfMaxSubArray(vector<int> &nums)
+{
+    int n = nums.size();
+
+    int sum = 0;
+    int maxSum = INT_MIN;
+
+    int start;
+    int arrStart, arrEnd;
+    for (int i = 0; i < n; i++)
+    {
+
+        if (sum == 0)
+            start = i;
+        sum += nums[i];
+
+        if (sum > maxSum)
+        {
+            maxSum = sum;
+            arrStart = start;
+            arrEnd = i;
+        }
+
+        if (sum < 0)
+        {
+            sum = 0;
+        }
+    }
+
+    return maxSum;
+}
