@@ -6,7 +6,7 @@
 * Keep 3 count variables for 0,1 and 2 respectively
 
 2) Optimal Approach --> O(N),O(1)
-* Watch the Optimal Approach(V.V.V.V.IMP)*****
+* Watch the Optimal Approach(V.IMP)
 https://www.youtube.com/watch?v=tp8JIuCXBaU&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=21
 ---------------------------------------------------------------
 */
@@ -14,7 +14,7 @@ https://www.youtube.com/watch?v=tp8JIuCXBaU&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_
 #include<bits/stdc++.h>
 using namespace std;
 
-// Dutch National Flag Algorithm --> V.V.V.V.IMP*******
+// Dutch National Flag Algorithm --> V.IMP
 class Solution {
 public:
     void swap(int* val1, int* val2) {
