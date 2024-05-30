@@ -23,7 +23,7 @@
 * At the end of the iteration, maxSum will contain the maximum sum of the subarray
 ---------------------------------------------------------------
 
-# Time Complexity: O(N)
+# Time Complexity: O(N) --> As we are traversing the array only once
 # Space Complexity: O(1)
 
 # Note: Follow-Up Question below --> V.V.Imp
@@ -62,16 +62,18 @@ public:
 
 // Kadane's Algorithm
 
-/* Follow-Up question (V.V.V.V.Imp)********
+/* Follow-Up question (V.V.Imp)*
  * Printing the subarray with the largest sum
  * If we want to print the subarray, we will need the start and endpoint of the subarray
  * Now, we don't know, which exactly is the subarray that will be giving the largest sum
- * So, what we do is, whenever the sum is 0, it means that we are starting to compute the sum of a subarray which might lead to the subarray with largest sum
- * So, we store the starting index in 'start' variable
+ * So, we will have to observe something in order to keep track of the subarray giving the largest sum
+ * After observing, we get that, whenever the sum is 0, we are starting to compute the sum of a subarray which might lead to the subarray with the largest sum
+ * So, we store that particular index in 'start' variable
  * Now, we will take in consideration the subarray only and only if it is increasing the maximum Sum
  * Therefore, if the maximum Sum is increasing, we will assign the 'arrStart' variable to 'start', i.e, the starting point of the subarray and 'arrEnd' to 'i', where the subarray might end
  * Hence, we will get the desired subarray with the maximum sum in between 'arrStart' and 'arrEnd'
  */
+
 int lengthOfMaxSubArray(vector<int> &nums)
 {
     int n = nums.size();
