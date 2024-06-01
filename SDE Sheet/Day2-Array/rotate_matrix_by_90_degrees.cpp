@@ -11,7 +11,7 @@ Explanation:
 3. How to think
 * Firstly, we need to observe the current situation of the matrix and the resultant situation of the matrix(i.e, after rotation)
 * After observing, we get to know some things about the relationship between the indexes in both the situations of the matrix
-* So, based on this relationship, we think of tranposing the matrix and then reversing the order of elements in each row, thus, we get the desired matrix
+* So, based on this relationship, we think of transposing the matrix and then reversing the order of elements in each row, thus, we get the desired matrix
 
 */
 
