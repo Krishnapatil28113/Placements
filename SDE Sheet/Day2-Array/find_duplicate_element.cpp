@@ -6,7 +6,7 @@
 
 2) Optimal Approach (Linked List Cycle Method) --> Tortoise and Hare approach
 * Link: https://www.youtube.com/watch?v=32Ll35mhWg0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=2
-* Note: We can use this approach when there is a condition like, 'the elements in the array are from [1,n] where n is related to the size of the array
+* Note: We can use this approach when there is a condition like, 'You are given an array of n integers from 1 to n.'
 ---------------------------------------------------------------
 */
 
