@@ -3,9 +3,13 @@
 ---------------------------------------------------------------
 # How to think:
 1) Optimal Approach --> Basic Maths(V.Imp)
-* If we want to find a missing number in the array containing elements from 1 to n, we can think of summing all the elements from 1 to n and then comparing it with the sum of the elements of the array
-* This will give us the missing number
-* Similarly, we can make 2 equations for 2 variables, i.e, 'Repeating' number and 'Missing' number
+* We should divide the problem into 2 sub problems
+    --> Finding missing number
+    --> Finding repeating number
+* So, to find the repeating number, we should think of some method
+* The first optimal method that comes to our mind is to sum up all the elements of the array and compare them with the sum of the first n elements
+* That might have given us the repeating number, but in this case, there is a missing number too; so we will be needing another equation to solve this problem
+* Therefore, we should think of making 2 equations for 2 variables, i.e, 'Repeating' number and 'Missing' number
 
 2) Optimal Approach --> XOR(V.V.Imp)**
 * link --> https://www.youtube.com/watch?v=2D0D8HE6uak

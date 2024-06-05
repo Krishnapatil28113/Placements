@@ -6,11 +6,11 @@
 * So, we should think of starting the iteration from the back
 * Secondly, we need to think about the element which should be placed at the end of nums1
     --> This element should be the greatest among the 2 arrays
-    --> So, we will compare the last elements of the both the arrays, as we know that both the arrays are sorted, there greatest elements would be at the end
+    --> So, we will compare the last elements of the both the arrays; as we know that both the arrays are sorted, there greatest elements would be at the end
 
-**NOTE: 
+**NOTE:
 * When we are comparing elements and we find that the element in nums1 is greater than nums2, then we need to find the perfect position of the element of nums2 in nums1
-* So, we keep updating the elements at the kth index with the ith index value and keep on decrementing i to compare it with j to find the perfect position of the element in nums2
+* So, we keep updating the elements at the kth index with the ith index value(shifting the elements basically) and keep on decrementing i to compare it with j to find the perfect position of that element in nums1
 
 ---------------------------------------------------------------
 */

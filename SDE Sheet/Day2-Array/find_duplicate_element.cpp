@@ -2,7 +2,7 @@
 # Problem Statement: To find duplicate element in the array
 ---------------------------------------------------------------
 # How to think:
-1) Brute and better are easy approach of sorting and hashing respectively
+1) Brute and better are easy approaches of sorting and hashing respectively
 
 2) Optimal Approach (Linked List Cycle Method) --> Tortoise and Hare approach
 * Link: https://www.youtube.com/watch?v=32Ll35mhWg0&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=2

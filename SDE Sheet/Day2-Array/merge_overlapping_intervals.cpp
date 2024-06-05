@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 # How to think:
 * First of all, we should plot all the points of the intervals on a paper looking for overlapping intervals
-* Once we plot it, we can clearly merge the overlapping intervals by observing
+* Once we plot it, we can clearly merge the overlapping intervals by observation
 ---------------------------------------------------------------
 */
 
