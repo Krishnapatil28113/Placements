@@ -27,7 +27,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Better Approach 1
+// Better Approach
 class Solution
 {
 public:
