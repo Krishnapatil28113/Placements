@@ -19,6 +19,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Optimal Approach --> O(2n), O(1)
+// Note: The space required is for storing 2 elements, so it is equivalent to O(1)
 class Solution {
 public:
     vector<int> majorityElement(vector<int>& nums) {
