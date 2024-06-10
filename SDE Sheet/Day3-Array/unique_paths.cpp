@@ -1,16 +1,16 @@
 /*
-# Problem Statement: To find all the unique paths that can be formed to reach the goal
+# Problem Statement: To find the count of all the unique paths that can be formed to reach the goal
 ---------------------------------------------------------------
 # How to think: 
 1) Recursion
 * We can trace down all the possible moves the robot can take at any given stage
-* Determine whether the robot can reach to the final state and increment the count
+* Determine whether the robot can reach to the final state and increment the count accordingly
 
 * Note: It takes a lot of time(TLE)
 
 2) Memoization(DP)**
 * While making recursive calls, we come across repetitive function calls, which have already been calculated
-* So, once we get a result, we can store that result by using some suitable data structure
+* So, once we get a result, we can store that result in some suitable data structure
 * And, every time, we are about to make a function call, we can check whether we already have the value or not
 
 * Note: This eradicates the need of making unnecessary function calls and saves time
