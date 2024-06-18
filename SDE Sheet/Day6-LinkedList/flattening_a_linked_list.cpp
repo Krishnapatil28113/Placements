@@ -13,58 +13,67 @@
 ---------------------------------------------------------------
 */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-struct Node{
-	int data;
-	struct Node * next;
-	struct Node * bottom;
-	
-	Node(int x){
-	    data = x;
-	    next = NULL;
-	    bottom = NULL;
-	}
-	
+struct Node
+{
+    int data;
+    struct Node *next;
+    struct Node *bottom;
+
+    Node(int x)
+    {
+        data = x;
+        next = NULL;
+        bottom = NULL;
+    }
 };
 
-Node* merge(Node* curr, Node* ahead) {
-    Node* res = new Node(0);
-    Node* temp = res;
-    
-    while(curr != nullptr && ahead != nullptr) {
-        if(curr->data <= ahead->data) {
+Node *merge(Node *curr, Node *ahead)
+{
+    Node *res = new Node(0);
+    Node *temp = res;
+
+    while (curr != nullptr && ahead != nullptr)
+    {
+        if (curr->data <= ahead->data)
+        {
             temp->bottom = curr;
             temp = temp->bottom;
             curr = curr->bottom;
         }
-        else {
+        else
+        {
             temp->bottom = ahead;
             temp = temp->bottom;
             ahead = ahead->bottom;
         }
     }
-    
-    if(curr != nullptr) {
+
+    if (curr != nullptr)
+    {
         temp->bottom = curr;
-    } else {
+    }
+    else
+    {
         temp->bottom = ahead;
     }
-    
+
     res->bottom->next = nullptr;
     return res->bottom;
 }
 
 Node *flatten(Node *head)
 {
-   if(head == nullptr || head->next == nullptr) {
-    return head;
-   }
-   else {
-       Node* toBeMerged = flatten(head->next);
-       Node* afterMerge = merge(head, toBeMerged);
-       return afterMerge;
-   }
-   
+    if (head == nullptr || head->next == nullptr)
+    {
+        return head;
+    }
+    else
+    {
+        Node *toBeMerged = flatten(head->next);
+        Node *afterMerge = merge(head, toBeMerged);
+        return afterMerge;
+    }
 }
