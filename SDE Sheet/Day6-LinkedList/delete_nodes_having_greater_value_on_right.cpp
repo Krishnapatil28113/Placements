@@ -13,15 +13,16 @@
 ---------------------------------------------------------------
 */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 struct Node
 {
     int data;
-    Node* next;
-    
-    Node(int x){
+    Node *next;
+
+    Node(int x)
+    {
         data = x;
         next = NULL;
     }
@@ -30,42 +31,49 @@ struct Node
 // Optimal Solution
 class Solution
 {
-    public:
-    Node* reverseList(Node* head) {
-        if(head == nullptr || head->next == nullptr) {
+public:
+    Node *reverseList(Node *head)
+    {
+        if (head == nullptr || head->next == nullptr)
+        {
             return head;
         }
-        Node* newHead = reverseList(head->next);
-        Node* front = head->next;
+        Node *newHead = reverseList(head->next);
+        Node *front = head->next;
         front->next = head;
         head->next = nullptr;
         return newHead;
     }
-    
-    Node *compute(Node *head) {
-        Node* newHead = reverseList(head);
-        
-        if(newHead->next == nullptr) {
+
+    Node *compute(Node *head)
+    {
+        Node *newHead = reverseList(head);
+
+        if (newHead->next == nullptr)
+        {
             return newHead;
         }
-        else {
+        else
+        {
             int maxEle = newHead->data;
-            Node* temp = newHead->next;
-            Node* prev = newHead;
-            while(temp != nullptr) {
-                if(temp->data < maxEle) {
+            Node *temp = newHead->next;
+            Node *prev = newHead;
+            while (temp != nullptr)
+            {
+                if (temp->data < maxEle)
+                {
                     prev->next = temp->next;
                     temp = temp->next;
                 }
-                else {
+                else
+                {
                     maxEle = temp->data;
                     prev = temp;
                     temp = temp->next;
                 }
             }
-            
+
             return reverseList(newHead);
         }
     }
-    
 };
