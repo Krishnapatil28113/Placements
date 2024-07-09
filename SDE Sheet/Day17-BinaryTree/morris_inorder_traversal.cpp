@@ -1,5 +1,5 @@
 /*
-# Problem Statement: Inorder Traversal without using extra space
+# Problem Statement: Inorder Traversal without using extra space (Morris Inorder Traversal)
 ---------------------------------------------------------------
 # How to think: 
 * Now, if we do not have to use space, we will have to have some mechanism to go back to previous nodes
