@@ -1,5 +1,5 @@
 /*
-# Problem Statement: To clone a linked list
+# Problem Statement: To clone a linked list with random pointer
 ---------------------------------------------------------------
 # How to think: 
 
