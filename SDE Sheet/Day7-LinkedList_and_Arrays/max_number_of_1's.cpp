@@ -5,7 +5,7 @@
 * Pretty straight forward
 
 # Note:
-* 1 thing we are doing here is, we are incrementing the count and simulatneously updating the maxCount as well
+* 1 thing we are doing here is, we are incrementing the count and simultaneously updating the maxCount as well
 * It is better than the other way round, i.e, updating the maxCount, whenever we encounter any element other than 1
 * We update the maxCount as soon as we encounter any 1; this has 2 benefits:
     --> First of all, if we update maxCount everytime we encounter element other than 1, there is a high possibility, that we will have to do it many times as the number of 1's will be lesser compared to the size of the array
