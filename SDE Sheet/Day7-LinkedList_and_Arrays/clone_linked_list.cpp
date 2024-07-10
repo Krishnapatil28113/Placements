@@ -5,7 +5,7 @@
 
 1) Good Solution:
 * As we start cloning the linked list step by step, we come across a situation in which we dont have a node to point to
-* This suggest that we should create all the nodes at the beggining itself and store them in a map to access them later
+* This suggests that we should create all the nodes at the beggining itself and store them in a map to access them later
 
 2) Optimal Solution:
 * Now, to optimize space, we will have to avoid the use of hashmap
