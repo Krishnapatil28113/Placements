@@ -6,6 +6,9 @@
 * The main difference here is the condition
     --> If there are 2 nodes having the same vertical and the same level, sort them according to their value
 * So, in order to do that, we just needed to use a data structure multiset which stores values in a sorted order
+
+# NOTE: One thing I learned from this question is:
+        --> std::multiset is implemented as a binary search tree and therefore it stores all the elements in a sorted order
 ---------------------------------------------------------------
 */
 
