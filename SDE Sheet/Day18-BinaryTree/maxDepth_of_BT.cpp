@@ -24,15 +24,10 @@ struct TreeNode {
 class Solution {
 public:
     int maxDepth(TreeNode* root) {
-        if(root == nullptr) {
-            return 0;
-        }
-        int cnt = 1;
-        cnt += maxDepth(root->left);
-        int maxCnt = cnt;
-        cnt = 1;
-        cnt += maxDepth(root->right);
-        maxCnt = max(cnt, maxCnt);
-        return maxCnt;
+        if(root == nullptr) return 0;
+        int lh = maxDepth(root->left);
+        int rh = maxDepth(root->right);
+
+        return 1 + max(lh, rh);
     }
 };
