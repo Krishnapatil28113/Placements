@@ -98,7 +98,7 @@ public:
     }
 };
 
-
+// Iterative Approach
 class Solution {
 public:
     bool isLeaf(Node* root) {
